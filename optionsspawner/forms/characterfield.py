@@ -16,7 +16,7 @@ class TextInputField(FormField):
     support any text-based input field and attributes.
     """
 
-    template = ("""<label for="{trait_name}">{label}</label>\n"""
+    template = ("""<label for="{trait_name}" id="label_id_{trait_name}">{label}</label>\n"""
     """<input id="id_{trait_name}" class="form-control" {attributes}>\n""")
 
     def __init__(self, *args, attr_type='text', **kwargs):

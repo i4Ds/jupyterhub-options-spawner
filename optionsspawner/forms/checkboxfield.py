@@ -19,7 +19,7 @@ class CheckboxInputField(FormField):
     initialize a checked checkbox, set `attr_checked=True`.
     """
 
-    template = ("""<label for="{trait_name}">{label}</label>\n"""
+    template = ("""<label for="{trait_name}" id="label_id_{trait_name}">{label}</label>\n"""
     """<input id="id_{trait_name}" class="form-control" {attributes}>\n""")
 
     def __init__(self, *args, attr_type='checkbox', **kwargs):

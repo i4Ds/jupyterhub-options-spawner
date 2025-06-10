@@ -20,7 +20,7 @@ class SelectField(FormField):
     NOTE: `attr_value` should not be specified on this field, and will have no effect.
     """
 
-    select_template = ("""<label for="{trait_name}">{label}</label>\n"""
+    select_template = ("""<label for="{trait_name}" id="label_id_{trait_name}">{label}</label>\n"""
     """<select id="id_{trait_name}" class="form-control" {attributes}>\n"""
     """{options}"""
     """</select>\n""")
